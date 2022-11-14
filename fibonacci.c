@@ -1,19 +1,19 @@
 #include <stdio.h>
-int main (){
-	int input, num1, num2, num3, i, sum;
-	printf("Input a number\n");
+
+int main(){
+	int i, num1, num2, num3, input;
+	printf("Fibonacci sequence until when?\n");
 	scanf("%i", &input);
 	num1 = 0;
 	num2 = 1;
-	sum = 0;
-	printf("0\n");
-	for(i = 1; i <= input; i++){
-		num3 = num2 + num1;
-
-		num2 = num3;
-		num1 = num2;
-		
+	printf("Start Sequence:\n");
+	printf("%i\n", num1);
+	printf("%i\n", num2);
+	for(i = 1; i < input; i++){
+		num3 = num1 + num2;
 		printf("%i\n", num3);
-	} 
+		num1 = num2;
+		num2 = num3;
+	}
 
 }

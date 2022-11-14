@@ -1,0 +1,38 @@
+int main ()
+{
+  int D.2355;
+
+  {
+    int input;
+    int i;
+
+    try
+      {
+        i = 0;
+        printf ("Input a number:\n");
+        scanf ("%i", &input);
+        i = 1;
+        goto <D.2351>;
+        <D.2350>:
+        input.0_1 = input;
+        _2 = input.0_1 % i;
+        if (_2 == 0) goto <D.2353>; else goto <D.2354>;
+        <D.2353>:
+        printf ("%i\n", i);
+        <D.2354>:
+        i = i + 1;
+        <D.2351>:
+        input.1_3 = input;
+        if (i <= input.1_3) goto <D.2350>; else goto <D.2348>;
+        <D.2348>:
+      }
+    finally
+      {
+        input = {CLOBBER};
+      }
+  }
+  D.2355 = 0;
+  return D.2355;
+}
+
+
