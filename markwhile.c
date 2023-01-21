@@ -16,7 +16,6 @@ int main(){
 		printf("Input the next mark\n");
 		scanf("%d", &input);
 	}
-
 	printf("Highest mark:%i\n", high);
 	printf("debug:%i\n", index);
 	avg = (double) sum / (double)index;
